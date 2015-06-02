@@ -39,9 +39,9 @@ prose:
           label: "Categories"
           help: "Categories for the article"
           options: 
-	        - name: 'Jekyll update'
+            - name: 'Jekyll update'
               value: 'Jekyll update'
-	        - name: 'Continuous Integration'
+            - name: 'Continuous Integration'
               value: 'CI'
-	        - name: 'Continuous Deployment'
+            - name: 'Continuous Deployment'
               value: 'CD'
