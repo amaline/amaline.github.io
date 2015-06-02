@@ -3,7 +3,7 @@ layout: post
 title: First blog entry
 date: {}
 categories: jekyll update
-published: false
+published: true
 ---
 
 Loaded Jekyll into a docker image in order to initialize the repository and serve up files locally.
