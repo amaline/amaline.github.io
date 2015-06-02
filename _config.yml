@@ -1,4 +1,5 @@
 # Site settings
+# Al Maline configurations
 title: Thoughts on Continuous Integration in the Cloud
 email: amaline@yahoo.com
 description: > # this means to ignore newlines until "baseurl:"
