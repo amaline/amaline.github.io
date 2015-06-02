@@ -28,7 +28,7 @@ prose:
           label: "Layout"
           help: "Layout for the article"
           options: 
-	        - name: "Blog post"
+            - name: "Blog post"
               value: "post"
             - name: 'News post'
               value: 'news'
