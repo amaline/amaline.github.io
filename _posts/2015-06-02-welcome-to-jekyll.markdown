@@ -1,14 +1,13 @@
 ---
 layout: post
 title: First blog entry
-date: {}
 categories: jekyll update
 published: true
 ---
 
 Loaded Jekyll into a docker image in order to initialize the repository and serve up files locally.
 
-{% highlight shell %}
+{% highlight bash %}
 #!/bin/bash
 
 REP=$1
