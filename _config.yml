@@ -11,3 +11,28 @@ github_username:  amaline
 
 # Build settings
 markdown: kramdown
+
+prose:
+  rooturl: "_posts"
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "select"
+          label: "Layout"
+          help: "Layout for the article"
+          options: 
+	    - name: 'Blog post'
+              value: 'post'
+      - name: "categories"
+        field:
+          element: "Multiselect"
+          label: "Categories"
+          help: "Categories for the article"
+          options: 
+	    - name: 'Jekyll update'
+              value: 'Jekyll update'
+	    - name: 'Continuous Integration'
+              value: 'CI'
+	    - name: 'Continuous Deployment'
+              value: 'CD'
