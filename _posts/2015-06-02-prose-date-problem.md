@@ -1,6 +1,9 @@
 ---
 published: true
+layout: post
+categories: jekyll update
 ---
+
 
 
 ## A New Post
