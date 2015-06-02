@@ -30,6 +30,8 @@ prose:
           options: 
 	        - name: 'Blog post'
               value: 'post'
+            - name: 'News post'
+              value: 'news'
       - name: "categories"
         field:
           element: "Multiselect"
