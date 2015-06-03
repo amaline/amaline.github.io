@@ -5,8 +5,9 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker run --rm -v $(pwd):/srv/jekyll jekyll/jekyll jekyll build
-    - ls ./_site
+    - docker run -v $(pwd):/tmp/site jekyll/jekyll  bash -l -c "ls /tmp/site"
+    - docker run -v $(pwd):/srv/jekyll jekyll/jekyll jekyll build
+    - docker run -v $(pwd)/_site:/tmp/site jekyll/jekyll  bash -l -c "ls /tmp/site"
     - docker build -t amaline/staticWebsite .
 
 test:
