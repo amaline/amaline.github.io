@@ -8,8 +8,8 @@ dependencies:
 
   override:
     - docker info
-    - if [[ -e ~/docker/jekyll.tar ]]; then; docker load -i ~/docker/jekyll.tar ; fi
-    - if [[ -e ~/docker/nginx.tar ]]; then; docker load -i ~/docker/nginx.tar ; fi
+    - if [[ -e ~/docker/jekyll.tar ]]; then docker load -i ~/docker/jekyll.tar ; fi
+    - if [[ -e ~/docker/nginx.tar ]]; then docker load -i ~/docker/nginx.tar ; fi
     - docker run -it -v $(pwd):/tmp/site jekyll/jekyll  bash -l -c "find /tmp/site -print"
     - docker run -v $(pwd):/srv/jekyll jekyll/jekyll jekyll build
     - docker run -it -v $(pwd)/_site:/tmp/site jekyll/jekyll  bash -l -c "find /tmp/site -print"
