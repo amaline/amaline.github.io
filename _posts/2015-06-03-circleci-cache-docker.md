@@ -1,7 +1,8 @@
 ---
-published: false
+published: true
 layout: post
 ---
+
 
 ## Using CircleCI with Docker (caching docker images)
 
