@@ -21,6 +21,9 @@ prose:
     - _config.yml
     - /_layouts
     - /_includes
+    - circle.yml
+    - Dockerfile
+   
   metadata:
     _posts:
       - name: "layout"
