@@ -1,0 +1,26 @@
+{
+	"Version": "2012-10-17",
+	"Id": "Policy1433431465395",
+	"Statement": [
+		{
+			"Sid": "Stmt1433431456555",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "arn:aws:iam::022218916186:user/BLOG.MALINE.ME-S3-ACCESS"
+			},
+			"Action": "s3:*",
+			"Resource": "arn:aws:s3:::blog.maline.me/*"
+		},
+		{
+			"Sid": "AddAnonymousPerm",
+			"Effect": "Allow",
+			"Principal": "*",
+			"Action": [
+				"s3:GetObject"
+			],
+			"Resource": [
+				"arn:aws:s3:::blog.maline.me/*"
+			]
+		}
+	]
+}
