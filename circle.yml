@@ -11,7 +11,7 @@ dependencies:
    cache_directories:
      - "~/docker"
 
-override:
+   override:
      - cat ~/.aws/config | grep '^aws' > .env
      - gem install s3_website
      - docker info
