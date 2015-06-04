@@ -1,0 +1,4 @@
+adapter: s3
+access_key_id: AKIAJTPPGK24DPLCIRPA
+secret_access_key: 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
+bucket_name: blog.maline.me
