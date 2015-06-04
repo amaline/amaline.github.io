@@ -11,7 +11,7 @@ dependencies:
    cache_directories:
      - "~/docker"
 
-  override:
+override:
      - cat ~/.aws/config | grep '^aws' > .env
      - gem install s3_website
      - docker info
@@ -25,7 +25,7 @@ dependencies:
      - if [[ ! -e ~/docker/jekyll.tar ]]; then docker save jekyll/jekyll > ~/docker/jekyll.tar ; fi
 #    - docker save nginx > ~/docker/nginx.tar
 
-#test:
+test:
   override:
      - test -d _site
 #    - docker run -d -p 8080:80 amaline/static_website; sleep 10
