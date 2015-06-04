@@ -1,6 +1,6 @@
 
-s3_id: AKIAJTPPGK24DPLCIRPA
-s3_secret: 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
+s3_id: <%= ENV['aws_access_key_id'] %>
+s3_secret: <%= ENV['aws_secret_access_key'] %>
 s3_bucket: blog.maline.me
 
 # Below are examples of all the available configurations.
