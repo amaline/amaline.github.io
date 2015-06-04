@@ -8,21 +8,23 @@ machine:
 
 
 dependencies:
-   cache_directories:
-     - "~/docker"
+#   cache_directories:
+#     - "~/docker"
 
    override:
      - cat ~/.aws/config | grep '^aws' > .env
      - gem install s3_website
-     - docker info
-     - if [[ -e ~/docker/jekyll.tar ]]; then docker load -i ~/docker/jekyll.tar ; fi
+     - gem install jekyll
+     - jekyll build
+#     - docker info
+#     - if [[ -e ~/docker/jekyll.tar ]]; then docker load -i ~/docker/jekyll.tar ; fi
 #    - if [[ -e ~/docker/nginx.tar ]]; then docker load -i ~/docker/nginx.tar ; fi
-     - docker run -it -v $(pwd):/tmp/site jekyll/jekyll  bash -l -c "find /tmp/site -print"
-     - docker run -v $(pwd):/srv/jekyll jekyll/jekyll jekyll build
-     - docker run -it -v $(pwd)/_site:/tmp/site jekyll/jekyll  bash -l -c "find /tmp/site -print"
+#     - docker run -it -v $(pwd):/tmp/site jekyll/jekyll  bash -l -c "find /tmp/site -print"
+#     - docker run -v $(pwd):/srv/jekyll jekyll/jekyll jekyll build
+#     - docker run -it -v $(pwd)/_site:/tmp/site jekyll/jekyll  bash -l -c "find /tmp/site -print"
 #    - docker build -t amaline/static_website .
-     - mkdir -p ~/docker
-     - if [[ ! -e ~/docker/jekyll.tar ]]; then docker save jekyll/jekyll > ~/docker/jekyll.tar ; fi
+#     - mkdir -p ~/docker
+#     - if [[ ! -e ~/docker/jekyll.tar ]]; then docker save jekyll/jekyll > ~/docker/jekyll.tar ; fi
 #    - docker save nginx > ~/docker/nginx.tar
 
 test:
