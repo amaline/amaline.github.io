@@ -1,7 +1,8 @@
 ---
-published: false
+published: true
 layout: post
 ---
+
 
 ## Trouble with AWS S3 Policy
 
