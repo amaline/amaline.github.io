@@ -5,6 +5,7 @@ layout: post
 
 
 
+
 ## Trouble with AWS S3 Policy
 
 As a newbie to AWS, having difficulty determining the appropriate policy for [blog.maline.me](http://blog.maline.me "My blog")
@@ -29,7 +30,7 @@ This policy allows anonymous read access to the bucket.
 
 But trying to add an additional policy to allow circleci to deploy the jekyll website keeps failing.  Finally succeeded by after reading the instructions in s3_website documentation [here](https://github.com/laurilehmijoki/s3_website/blob/master/additional-docs/setting-up-aws-credentials.md)
 
-## Solved
+## Solved the problem
 
 The key that I was missing was to have the policy apply to the website resource in addition to the / * resource. 
 
