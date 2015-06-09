@@ -24,4 +24,5 @@ deployment:
     branch: master
     commands:
        - s3_website push
-
+       - wget -O monitors.json https://api.uptimerobot.com/getMonitors?apiKey=${UPTIME_ROBOT_API_KEY}&logs=1&alertContacts=1&responseTimes=1&responseTimesAverage=180&format=json
+       - cat monitors.json
