@@ -25,3 +25,4 @@ deployment:
     commands:
        - s3_website push
        - curl -v https://api.uptimerobot.com/getMonitors?apiKey=${UPTIME_ROBOT_API_KEY}&format=json 
+       - ls -l
