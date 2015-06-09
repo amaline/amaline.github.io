@@ -3,6 +3,8 @@ machine:
     version: 1.9.3-p0-falcon
   java:
     version: openjdk7
+  node:
+    version: 0.10.22
 
 
 dependencies:
@@ -11,6 +13,7 @@ dependencies:
      - cat ~/.aws/config | grep '^aws' > .env
      - gem install s3_website
      - gem install jekyll
+     - npm install uptime-robot
      - jekyll build
 
 
@@ -24,5 +27,4 @@ deployment:
     branch: master
     commands:
        - s3_website push
-       - bash updateMonitors.sh 
-       - ls -l
+       - node updateMonitor.js
