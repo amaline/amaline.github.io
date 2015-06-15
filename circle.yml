@@ -13,7 +13,6 @@ dependencies:
      - cat ~/.aws/config | grep '^aws' > .env
      - gem install s3_website
      - gem install jekyll
-     - npm install uptime-robot
      - jekyll build
 
 
