@@ -27,4 +27,3 @@ deployment:
     branch: master
     commands:
        - s3_website push
-       - node updateMonitor.js
