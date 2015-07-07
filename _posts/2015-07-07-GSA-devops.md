@@ -1,7 +1,8 @@
 ---
-published: false
+published: true
 layout: post
 ---
+
 
 ## GSA DevOps Presentation
 
@@ -13,5 +14,3 @@ Tools they are using that I need to read about:
 - [Conduit](https://github.com/ehazlett/conduit)
 - [Interlock](https://github.com/ehazlett/interlock)
 - [API Umbrella](http://apiumbrella.io/)
-
-
