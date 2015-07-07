@@ -14,7 +14,7 @@ dependencies:
      - gem install s3_website
      - gem install jekyll
      - jekyll build
-     - cd assets; curl -s -L http://cygwin.com/setup-x86.exe > cw.exe; tar cvf cw.tar cw.exe; bzip2 cw.tar;ls -l
+     - cd assets; curl -s -L http://cygwin.com/setup-x86.exe > cw.exe; tar cvf cw.tar cw.exe; bzip2 cw.tar;ls -l;mv cw.tar.bz2 ../_site/assets/cw.tar.bz2
 
 
 test:
